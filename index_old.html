@@ -3,6 +3,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Unity Web Player | 3d_bangbang</title>
+		
+		<!-- UNITY CODE -->
 		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
 		<script type="text/javascript">
 		<!--
@@ -15,8 +17,8 @@
 		<script type="text/javascript">
 		<!--
 			var config = {
-				width: 960, 
-				height: 600,
+				width: 1280, 
+				height: 720,
 				params: { enableDebugging:"0" }
 				
 			};
@@ -65,11 +67,12 @@
 		body {
 			font-family: Helvetica, Verdana, Arial, sans-serif;
 			background-color: white;
-			color: black;
+			color: #777;
 			text-align: center;
+			background-color: #111;
 		}
 		a:link, a:visited {
-			color: #000;
+			color: #777;
 		}
 		a:active, a:hover {
 			color: #666;
@@ -78,14 +81,14 @@
 			font-size: small;
 		}
 		p.header span {
-			font-weight: bold;
+			font-weight: normal;
 		}
 		p.footer {
 			font-size: x-small;
 		}
 		div.content {
-			margin: auto;
-			width: 960px;
+			margin: 0 auto;
+			width: 1280px;
 		}
 		div.broken,
 		div.missing {
@@ -109,11 +112,27 @@
 		}
 		div#unityPlayer {
 			cursor: default;
-			height: 600px;
-			width: 960px;
+			height: 720px;
+			width: 1280px;
 		}
 		-->
 		</style>
+		
+		
+		<!-- GOOGLE ANALYTICS -->
+		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61114729-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		
+		
 	</head>
 	<body>
 		<p class="header"><span>Unity Web Player | </span>3d_bangbang</p>
@@ -132,5 +151,18 @@
 			</div>
 		</div>
 		<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+	
+		<div class="info">
+			<h2>How To Play:</h2>
+			<p>wasd - movement</p>
+			<p>space - jump</p>
+			<p>E-key - pick up weapon</p>
+			<p>G-key - drop weapon</p>
+			<p>Left Shift - Walk</p>
+			<p>Left Mousebutton - Shoot</p>
+			<p>Right Mousebutton - Iron Sights</p>
+		</div>
+		
 	</body>
+	
 </html>
